@@ -1,4 +1,4 @@
-export default function iterateThroughObject (reportWithIterator) {
+export default function iterateThroughObject(reportWithIterator) {
   const employees = Object.values(reportWithIterator);
   const array = [];
   for (const employee of employees) {

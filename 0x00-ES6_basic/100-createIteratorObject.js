@@ -1,4 +1,4 @@
-export default function createIteratorObject (report) {
+export default function createIteratorObject(report) {
   const employees = Object.values(report.allEmployees);
   const array = [];
   for (const employee of employees) {
