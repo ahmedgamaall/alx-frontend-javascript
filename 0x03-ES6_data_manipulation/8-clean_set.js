@@ -1,11 +1,11 @@
 export default function cleanSet(set, startString) {
   const finalList = [];
   if (
-    typeof set !== "object" ||
-    typeof startString !== "string" ||
-    startString.length === 0
+    typeof set !== 'object'
+    || typeof startString !== 'string'
+    || startString.length === 0
   ) {
-    return "";
+    return '';
   }
 
   for (const item of set) {
@@ -13,5 +13,5 @@ export default function cleanSet(set, startString) {
       finalList.push(item.slice(startString.length));
     }
   }
-  return finalList.join("-");
+  return finalList.join('-');
 }
